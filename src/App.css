@@ -1,0 +1,95 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  place-content: center;
+  min-height: 90vh;
+  max-width: 100vw;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 2rem;
+  background: white;
+}
+.card {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  place-content: center;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  background-color: black;
+  color: white;
+}
+.list {
+  list-style-type: none;
+}
+.item {
+  display: flex;
+  margin: 0.5rem;
+  width: 20vw;
+  font-size: 1.75rem;
+  align-items: center;
+  font-weight: lighter;
+}
+.checkbox {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+.delete {
+  margin-left: auto;
+  background: white;
+  border: none;
+  font-size: 2rem;
+  color: transparent;
+  -webkit-background-clip: text;
+}
+.input {
+  font-size: 1.25rem;
+  margin: 0.5rem;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  border: 2px solid black;
+  outline: none;
+}
+.add {
+  font-size: 1.25rem;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  border: 2px solid black;
+}
+h1 {
+  background: linear-gradient(270deg, #00ffa7 0%, #ffff00 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+.checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: red;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+.checkbox:checked {
+  background-color: green;
+}
+@media (max-width: 768px) {
+  .card {
+    width: 80vw;
+  }
+  .item {
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .card {
+    width: 90vw;
+  }
+  .item {
+    width: 80vw;
+  }
+}
